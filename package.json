@@ -1,12 +1,12 @@
 {
-  "name": "@m1m1s1ku/mimisiku",
+  "name": "@uplg/uplg",
   "version": "1.0.0",
   "author": "Léonard C.",
   "license": "MIT",
-  "homepage": "https://mimisiku.dev",
+  "homepage": "https://uplg.xyz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/m1m1s1ku/mimisiku"
+    "url": "https://github.com/uplg/uplg"
   },
   "dependencies": {
     "buffer": "^6.0.3",
@@ -47,7 +47,6 @@
     "build": "webpack --mode production",
     "lint": "eslint ./src/**/*.ts",
     "postinstall": "pnpm run build",
-    "start": "webpack serve --mode development",
-    "deploy": "rm -rf dist && pnpm run lint && pnpm run build && cd dist && rsync -avz ./ -e \"ssh -p 4242\" root@100.82.63.92:/var/www/hostings/mimisiku"
+    "start": "webpack serve --mode development"
   }
 }

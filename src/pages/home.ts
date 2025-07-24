@@ -1,24 +1,30 @@
-import { html, TemplateResult } from 'lit';
-import { customElement } from 'lit/decorators/custom-element.js';
-import { Mimisiku } from '../core/mimisiku';
+import { html, TemplateResult } from "lit";
+import { customElement } from "lit/decorators/custom-element.js";
+import { Uplg } from "../core/uplg";
 
-import Page from '../core/strategies/Page';
-import { Pages } from '../mimisiku-app';
-import { Chevron } from '../svg';
+import Page from "../core/strategies/Page";
+import { Pages } from "../uplg-app";
+import { Chevron } from "../svg";
 
-@customElement('ui-home')
+@customElement("ui-home")
 export class HomeController extends Page {
   public render(): void | TemplateResult {
     return html`
       <div id="page" class="page home" role="main">
         <section class="hero">
-          <h1>Passionately building and creating, bringing the future to the present.</h1>
+          <h1>
+            Passionately building and creating, bringing the future to the
+            present.
+          </h1>
         </section>
 
         <section class="areas">
           <section class="service">
             <h2>Development</h2>
-            <p>We utilise insights and expertise gained from managing multiple successful projects.</p>
+            <p>
+              We utilise insights and expertise gained from managing multiple
+              successful projects.
+            </p>
             <ul>
               <li>Custom solutions using state of the art technologies</li>
               <li>Decentralization (DLT)</li>
@@ -26,15 +32,20 @@ export class HomeController extends Page {
               <li>OpenID</li>
               <li>IoT</li>
             </ul>
-            <a href="projects" @click=${(e: Event) => Mimisiku()?.navigateTo(e, Pages.projects)}>
-              Projects
-              ${Chevron}
+            <a
+              href="projects"
+              @click=${(e: Event) => Uplg()?.navigateTo(e, Pages.projects)}
+            >
+              Projects ${Chevron}
             </a>
           </section>
 
           <section class="service">
             <h2>Networking</h2>
-            <p>We have enabled the growth of large successful communities, deploying infrastructure at scale.</p>
+            <p>
+              We have enabled the growth of large successful communities,
+              deploying infrastructure at scale.
+            </p>
             <ul>
               <li>On-premise private networks</li>
               <li>Self-sovereign identities</li>
@@ -42,16 +53,22 @@ export class HomeController extends Page {
               <li>Monitoring</li>
               <li>Security</li>
             </ul>
-            <a class="wip" href="wip" @click=${(e: Event) => Mimisiku()?.navigateTo(e, Pages.wip)}>
-              Cases
-              ${Chevron}            
+            <a
+              class="wip"
+              href="wip"
+              @click=${(e: Event) => Uplg()?.navigateTo(e, Pages.wip)}
+            >
+              Cases ${Chevron}
             </a>
           </section>
         </section>
 
         <div class="links">
-          <a href="contact" @click=${(e: Event) => Mimisiku()?.navigateTo(e, Pages.contact)}>
-          // Contact.
+          <a
+            href="contact"
+            @click=${(e: Event) => Uplg()?.navigateTo(e, Pages.contact)}
+          >
+            // Contact.
           </a>
         </div>
       </div>
@@ -60,7 +77,7 @@ export class HomeController extends Page {
 }
 
 declare global {
-	interface HTMLElementTagNameMap {
-		'ui-home': HomeController;
-	}
+  interface HTMLElementTagNameMap {
+    "ui-home": HomeController;
+  }
 }

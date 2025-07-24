@@ -1,1 +1,0 @@
-export function Mimisiku() { return document.querySelector('mimisiku-app'); }

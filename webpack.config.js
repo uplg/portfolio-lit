@@ -32,7 +32,7 @@ const polyfills = [
 
 const commonConfig = merge([
   {
-    entry: './src/mimisiku-app.ts',
+    entry: './src/uplg-app.ts',
     output: {
       path: OUTPUT_PATH,
       filename: '[name].[chunkhash:8].js'

@@ -1,10 +1,9 @@
-import { html, TemplateResult } from 'lit';
-import { customElement } from 'lit/decorators/custom-element.js';
-import { Mimisiku } from '../core/mimisiku';
+import { html, TemplateResult } from "lit";
+import { customElement } from "lit/decorators/custom-element.js";
 
-import Page from '../core/strategies/Page';
+import Page from "../core/strategies/Page";
 
-@customElement('ui-contact')
+@customElement("ui-contact")
 export class ContactController extends Page {
   public render(): void | TemplateResult {
     return html`
@@ -15,7 +14,7 @@ export class ContactController extends Page {
 
         <section class="areas">
           <p>
-            <a href="mailto:leonard@mimisiku.dev">leonard@mimisiku.dev</a>
+            <a href="mailto:leonard@uplg.xyz">leonard@uplg.xyz</a>
           </p>
         </section>
       </div>
@@ -24,7 +23,7 @@ export class ContactController extends Page {
 }
 
 declare global {
-	interface HTMLElementTagNameMap {
-		'ui-contact': ContactController;
-	}
+  interface HTMLElementTagNameMap {
+    "ui-contact": ContactController;
+  }
 }

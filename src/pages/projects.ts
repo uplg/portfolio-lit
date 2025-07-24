@@ -4,10 +4,10 @@ import { repeat } from "lit/directives/repeat.js";
 import { map } from "lit/directives/map.js";
 import { when } from "lit/directives/when.js";
 
-import { Mimisiku } from "../core/mimisiku";
+import { Uplg } from "../core/uplg";
 
 import Page from "../core/strategies/Page";
-import { Pages } from "../mimisiku-app";
+import { Pages } from "../uplg-app";
 import { GithubLogo } from "../svg";
 
 @customElement("ui-projects")
@@ -17,7 +17,7 @@ export class ProjectsController extends Page {
       name: "Thiweb",
       slug: "thiweb",
       description: "Community.",
-      repository: "https://github.com/m1m1s1ku/thiweb-crypt-n-decrypt",
+      repository: "https://github.com/uplg/thiweb-crypt-n-decrypt",
       status: "published",
       url: "https://forum.thiweb.com",
       tags: ["PhpBB", "Typescript", "NodeJS", "AWS", "WebExtension"],
@@ -27,7 +27,7 @@ export class ProjectsController extends Page {
       slug: "dobrunia",
       description: "Custom objects & interior design.",
       status: "pause",
-      repository: "https://github.com/ghostfly/dobrunia-design",
+      repository: "https://github.com/uplg/dobrunia-design",
       url: "https://www.dobruniadesign.com",
       tags: ["Lit", "GraphQL", "Wordpress"],
     },
@@ -36,7 +36,7 @@ export class ProjectsController extends Page {
       slug: "cheno",
       description: "Iron artist.",
       status: "published",
-      repository: "https://github.com/ghostfly/cheno-website",
+      repository: "https://github.com/uplg/cheno-website",
       url: "https://www.cheno.fr",
       tags: ["Lit", "GraphQL", "Wordpress"],
     },
@@ -44,9 +44,9 @@ export class ProjectsController extends Page {
       name: "Backup tool",
       slug: "backup-tool",
       description: "Multi-site, simple, backup in NodeJS.",
-      repository: "https://github.com/m1m1s1ku/backup-tool",
+      repository: "https://github.com/uplg/backup-tool",
       status: "published",
-      url: "https://github.com/m1m1s1ku/backup-tool",
+      url: "https://github.com/uplg/backup-tool",
       tags: ["Gzip", "MySQL", "MySQLDump", "SFTP", "FTP(ES)"],
     },
     {
@@ -54,16 +54,16 @@ export class ProjectsController extends Page {
       slug: "ga-export",
       description:
         "Export every secret easily from Google Authenticator (Authy in another repo too.).",
-      repository: "https://github.com/m1m1s1ku/gauth-export",
+      repository: "https://github.com/uplg/gauth-export",
       status: "published",
-      url: "https://ga.mimisiku.dev",
+      url: "https://ga.uplg.xyz",
       tags: ["OTPAuth", "Material"],
     },
     {
       name: "Fujin",
       slug: "fujin",
       description: "Crypto / news Bot on Telegram.",
-      repository: "https://github.com/m1m1s1ku/fujin",
+      repository: "https://github.com/uplg/fujin",
       status: "pause",
       url: "https://t.me/FujinCryptoBot",
       tags: ["NodeJS", "Telegram", "Bot", "OPML", "RSS"],
@@ -72,7 +72,7 @@ export class ProjectsController extends Page {
       name: "Persin Conseil",
       slug: "persin",
       description: "IT consulting and services.",
-      repository: "https://github.com/Ghostfly/persin-conseil",
+      repository: "https://github.com/uplg/persin-conseil",
       url: "https://www.persin.fr",
       status: "published",
       tags: ["Lit", "Offline ready", "no-js handling"],
@@ -81,27 +81,27 @@ export class ProjectsController extends Page {
       name: "BricksSDK",
       slug: "bricks-sdk",
       description: "An SDK to access Bricks.co.",
-      repository: "https://github.com/m1m1s1ku/bricks_sdk",
+      repository: "https://github.com/uplg/bricks_sdk",
       status: "archived",
-      url: "https://www.npmjs.com/package/@m1m1s1ku/bricks_sdk",
+      url: "https://www.npmjs.com/package/@uplg/bricks_sdk",
       tags: ["NodeJS", "Typescript", "Zod", "Undici"],
     },
     {
       name: "MonpetitplacementSDK",
       slug: "mpp-sdk",
       description: "An SDK to access MonPetitPlacement.",
-      repository: "https://github.com/m1m1s1ku/monpetitplacement_sdk",
+      repository: "https://github.com/uplg/monpetitplacement_sdk",
       status: "archived",
-      url: "https://www.npmjs.com/package/@m1m1s1ku/monpetitplacement_sdk",
+      url: "https://www.npmjs.com/package/@uplg/monpetitplacement_sdk",
       tags: ["NodeJS", "Typescript", "Zod", "Undici"],
     },
     {
       name: "PDFFormsFiller",
       slug: "pdf-forms-filler",
       description: "Fill Acrobat forms easily using pure PHP ! 💪",
-      repository: "https://github.com/m1m1s1ku/PDFFormsFiller",
+      repository: "https://github.com/uplg/PDFFormsFiller",
       status: "archived",
-      url: "https://github.com/m1m1s1ku/PDFFormsFiller",
+      url: "https://github.com/uplg/PDFFormsFiller",
       tags: ["PHP", "FPDF/FPDI", "PHPUnit"],
     },
   ];
@@ -155,7 +155,7 @@ export class ProjectsController extends Page {
         <a
           class="back-home flex-link justify-end"
           href="home"
-          @click=${(e: Event) => Mimisiku()?.navigateTo(e, Pages.home)}
+          @click=${(e: Event) => Uplg()?.navigateTo(e, Pages.home)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

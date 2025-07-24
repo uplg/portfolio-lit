@@ -1,7 +1,7 @@
-# Mimisiku
+# Uplg
 
-![Status](https://status.mimisiku.dev/api/badge/3/status)
-![Uptime](https://status.mimisiku.dev/api/badge/3/uptime)
+![Status](https://status.uplg.xyz/api/badge/3/status)
+![Uptime](https://status.uplg.xyz/api/badge/3/uptime)
 
 ## License
 
