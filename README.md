@@ -1,7 +1,6 @@
-# Uplg
+# Lit portfolio
 
-![Status](https://status.uplg.xyz/api/badge/3/status)
-![Uptime](https://status.uplg.xyz/api/badge/3/uptime)
+Archive, superseeded by [Astro Porfolio](https://github.com/uplg/astro-portfolio)
 
 ## License
 
